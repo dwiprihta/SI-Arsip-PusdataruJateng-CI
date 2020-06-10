@@ -1,0 +1,34 @@
+//PEGAWAI
+Select a.nip,a.nama, a.jenis_kelamin, a.tempat_lahir, 
+a.tanggal_lahir,a.id_instansi,b.inisial, b.instansi, 
+a.id_pangkat,c.pangkat,a.id_jabatan,d.inisial, d.jabatan,a.tanggal_pensiun,a.status, a.foto 
+FROM tbl_pegawai a 
+JOIN tbl_instansi b ON a.id_instansi=b.id_instansi
+JOIN tbl_pangkat c ON a.id_pangkat=c.id_pangkat
+JOIN tbl_jabatan d ON a.id_jabatan=d.id_jabatan
+
+//LOGIN
+Select a.nip,a.nama, a.jenis_kelamin, a.tempat_lahir, a.tanggal_lahir, a.instansi, a.jabatan, a.pangkat, a.golongan, a.status, b.status_akun, b.password,b.id_role,a.foto
+FROM tbl_pegawai a 
+JOIN tbl_user b ON a.nip=b.nip
+
+//DOKUMEN
+Select a.nip,a.nama, a.jenis_kelamin, a.tempat_lahir, 
+a.tanggal_lahir,a.instansi,a.jabatan,
+a.pangkat,a.golongan,a.tanggal_pensiun,a.status, a.foto,
+e.rak, e.box, e.definitif,e.penyimpanan,e.penyimpanan_pensiun, e.tanggal_simpan, e.tanggal_retensi
+
+FROM tbl_pegawai a 
+JOIN tbl_dokumen e ON a.nip=e.nip
+
+//PINJAM
+Select a.no_pinjam,a.nip, b.nama, a.keperluan, a.status, a.tanggal_pinjam,a.petugas, a.tanggal_kembali,a.petugas_k, a.catatan
+FROM tbl_pinjam a 
+JOIN tbl_pegawai b ON a.nip=b.nip
+
+//QUERY PANGKET
+iNSERT INTO tbl_pangkat VALUES 
+('','juru Muda','aktif'),('','juru Muda Tingkat I','aktif'),('','juru','aktif'),('','juru Tingkat I','aktif'),
+('','Pengatur Muda','aktif'),('','Pengatur Muda Tingkat I','aktif'),('','Pengatur','aktif'),('','Pengatur Tingkat I','aktif'),
+('','Penata Muda','aktif'),('','Penata Muda Tingkat I','aktif'),('','Penata','aktif'),('','Penata Tingkat I','aktif'),
+('','Pembina','aktif'),('','Pembina Tingkat 1','aktif'),('','Pembina Utama Muda','aktif'),('','Pembina Utama Madya','aktif'),('','Pembina Utama','aktif')

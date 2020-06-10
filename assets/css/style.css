@@ -1,0 +1,161 @@
+:root {
+    --blue: #4e73df;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74a3b;
+    --orange: #fd7e14;
+    --yellow: #f6c23e;
+    --green: #1cc88a;
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --primary: #4e73df;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+th,td{
+  text-align: center;
+}
+
+h2{
+  color: black;
+  font-weight: bold;
+}
+
+  #my-grid th {
+  border-color:#C9DCEA;
+  background-color: #deeffc; 
+  background-color: -moz-linear-gradient(top,  #deeffc 0%, #d7e6f2 100%); 
+  background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#deeffc), color-stop(100%,#d7e6f2)); 
+  background-color: -webkit-linear-gradient(top,  #deeffc 0%,#d7e6f2 100%); 
+  background-color: -o-linear-gradient(top,  #deeffc 0%,#d7e6f2 100%); 
+  background-color: -ms-linear-gradient(top,  #deeffc 0%,#d7e6f2 100%); 
+  background-color: linear-gradient(to bottom,  #deeffc 0%,#d7e6f2 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deeffc', endColorstr='#d7e6f2',GradientType=0 ); 
+  }
+
+  
+.bg-login {
+ /* background-image: url('../img/bg/bglogin.jpg'); */
+ background-image: url("../img/bg/bg_login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+  .bg-login2 {
+    /* background-image: url('../img/bg/bglogin.jpg'); */
+    background-image: url("../img/bg/bg_login2.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center; }
+
+  .judul-transaksi {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  }
+
+  .btn{
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .table-responsive {
+  overflow: hidden;
+  }
+
+  .alert {
+  margin-bottom: 0px;
+  }
+
+  #daftar-autocomplete { 
+  list-style:none; 
+  margin:0; 
+  padding:0; 
+  width:100%;
+  }
+
+  #daftar-autocomplete li {
+  padding: 5px 10px 5px 10px; 
+  background:#FAFAFA; 
+  border-bottom:#ddd 1px solid;
+  }
+
+  #daftar-autocomplete li:hover,
+  #daftar-autocomplete li.autocomplete_active { 
+  background:#0a7c50; 
+  color:#fff; 
+  cursor: pointer;
+  }
+
+  #hasil_pencarian{ 
+  padding: 0px; 
+  display: none; 
+  position: absolute; 
+  max-height: 350px;
+  overflow: auto;
+  border:1px solid #ddd;
+  z-index: 1;
+  }
+
+  .TotalBayar {
+  text-align: right;
+  margin-bottom: 20px;
+  }
+
+  .TotalBayar h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  .info_pelanggan {
+  margin-bottom: 0px;
+  }
+
+  .info_pelanggan td {
+  padding: 2px;
+  text-align: left;
+  }
+
+  #LoadingDulu {
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 1;
+  }
+
+  #LoadingContent {
+  height: 30px;
+  margin: auto;
+  width: 180px;
+  background: #ff005e;
+  text-align: center;
+  line-height: 29px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.alert-red{
+    background-color:red;
+    color:#fff;
+}
+
+
+.alert-blue{
+  background-color:rgb(24, 93, 255);
+  color:#fff;
+}
